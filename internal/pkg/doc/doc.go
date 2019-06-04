@@ -116,6 +116,7 @@ func getInputs(list *ast.ObjectList) []Input {
 				Description: getItemDescription(item),
 				Default:     getItemDefault(item),
 				Type:        getItemType(item),
+				Required:    getItemRequired(item),
 			})
 		}
 	}
@@ -188,6 +189,10 @@ func getItemByKey(items []*ast.ObjectItem, key string) *Value {
 func getItemDefault(item *ast.ObjectItem) *Value {
 	items := item.Val.(*ast.ObjectType).List.Items
 	return getItemByKey(items, "default")
+}
+
+func getItemRequired(item *ast.ObjectItem) bool {
+	return getItemDefault(item) == nil
 }
 
 func getItemDescription(item *ast.ObjectItem) string {

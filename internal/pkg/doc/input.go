@@ -8,6 +8,7 @@ type Input struct {
 	Description string
 	Default     *Value
 	Type        string
+	Required    bool
 }
 
 // GetDefault returns the Terraform input's default value.
