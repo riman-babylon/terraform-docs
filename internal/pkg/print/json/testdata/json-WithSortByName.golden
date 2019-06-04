@@ -5,7 +5,8 @@
       "Name": "input_with_underscores",
       "Description": "A variable with underscores.",
       "Default": null,
-      "Type": "string"
+      "Type": "string",
+      "Required": true
     },
     {
       "Name": "list-1",
@@ -18,13 +19,15 @@
           "c"
         ]
       },
-      "Type": "list"
+      "Type": "list",
+      "Required": false
     },
     {
       "Name": "list-2",
       "Description": "It's list number two.",
       "Default": null,
-      "Type": "list"
+      "Type": "list",
+      "Required": true
     },
     {
       "Name": "list-3",
@@ -33,7 +36,8 @@
         "Type": "list",
         "Value": []
       },
-      "Type": "list"
+      "Type": "list",
+      "Required": false
     },
     {
       "Name": "map-1",
@@ -46,13 +50,15 @@
           "c": 3
         }
       },
-      "Type": "map"
+      "Type": "map",
+      "Required": false
     },
     {
       "Name": "map-2",
       "Description": "It's map number two.",
       "Default": null,
-      "Type": "map"
+      "Type": "map",
+      "Required": true
     },
     {
       "Name": "map-3",
@@ -61,7 +67,8 @@
         "Type": "map",
         "Value": {}
       },
-      "Type": "map"
+      "Type": "map",
+      "Required": false
     },
     {
       "Name": "string-1",
@@ -70,13 +77,15 @@
         "Type": "string",
         "Value": "bar"
       },
-      "Type": "string"
+      "Type": "string",
+      "Required": false
     },
     {
       "Name": "string-2",
       "Description": "It's string number two.",
       "Default": null,
-      "Type": "string"
+      "Type": "string",
+      "Required": true
     },
     {
       "Name": "string-3",
@@ -85,13 +94,15 @@
         "Type": "string",
         "Value": ""
       },
-      "Type": "string"
+      "Type": "string",
+      "Required": false
     },
     {
       "Name": "unquoted",
       "Description": "",
       "Default": null,
-      "Type": "string"
+      "Type": "string",
+      "Required": true
     }
   ],
   "Outputs": [

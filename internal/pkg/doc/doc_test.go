@@ -12,6 +12,7 @@ var inputUnquoted = doc.Input{
 	Description: "",
 	Default:     nil,
 	Type:        "string",
+	Required:    true,
 }
 
 var inputString3 = doc.Input{
@@ -22,6 +23,7 @@ var inputString3 = doc.Input{
 		Value: "",
 	},
 	Type: "string",
+	Required:    false,
 }
 
 var inputString2 = doc.Input{
@@ -29,6 +31,7 @@ var inputString2 = doc.Input{
 	Description: "It's string number two.",
 	Default:     nil,
 	Type:        "string",
+	Required:    true,
 }
 
 var inputString1 = doc.Input{
@@ -39,6 +42,7 @@ var inputString1 = doc.Input{
 		Value: "bar",
 	},
 	Type: "string",
+	Required:    false,
 }
 
 var inputMap3 = doc.Input{
@@ -49,6 +53,7 @@ var inputMap3 = doc.Input{
 		Value: map[string]interface{}{},
 	},
 	Type: "map",
+	Required:    false,
 }
 
 var inputMap2 = doc.Input{
@@ -56,6 +61,7 @@ var inputMap2 = doc.Input{
 	Description: "It's map number two.",
 	Default:     nil,
 	Type:        "map",
+	Required:    true,
 }
 
 var inputMap1 = doc.Input{
@@ -70,6 +76,7 @@ var inputMap1 = doc.Input{
 		},
 	},
 	Type: "map",
+	Required:    false,
 }
 
 var inputList3 = doc.Input{
@@ -80,6 +87,7 @@ var inputList3 = doc.Input{
 		Value: []interface{}{},
 	},
 	Type: "list",
+	Required:    false,
 }
 
 var inputList2 = doc.Input{
@@ -87,6 +95,7 @@ var inputList2 = doc.Input{
 	Description: "It's list number two.",
 	Default:     nil,
 	Type:        "list",
+	Required:    true,
 }
 
 var inputList1 = doc.Input{
@@ -101,6 +110,7 @@ var inputList1 = doc.Input{
 		},
 	},
 	Type: "list",
+	Required:    false,
 }
 
 var inputWithUnderscores = doc.Input{
@@ -108,6 +118,7 @@ var inputWithUnderscores = doc.Input{
 	Description: "A variable with underscores.",
 	Type:        "string",
 	Default:     nil,
+	Required:    true,
 }
 
 var output1 = doc.Output{
